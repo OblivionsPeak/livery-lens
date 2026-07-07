@@ -50,7 +50,9 @@ function downloadBlob(name, blob) {
 async function ensureSession() {
   if (session) return session;
   if (typeof ort === "undefined") throw new Error("onnxruntime failed to load");
-  ort.env.wasm.wasmPaths = "vendor/";
+  // Must be an absolute URL: ort dynamic-imports the .mjs from this path, and
+  // bare relative specifiers (no "./" or scheme) are illegal in import().
+  ort.env.wasm.wasmPaths = new URL("vendor/", document.baseURI).href;
   ort.env.wasm.numThreads = 1; // GitHub Pages has no COOP/COEP headers
   setStage("Downloading segmentation model (one-time, ~16 MB)…");
   const resp = await fetch("vendor/u2netp.onnx");
