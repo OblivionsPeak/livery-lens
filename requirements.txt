@@ -4,7 +4,8 @@ opencv-python-headless>=4.9
 scikit-learn>=1.4
 Pillow>=10.0
 
-# Optional, better car/background separation (ONNX U2-Net, no torch).
-# Install with:  pip install rembg onnxruntime
-# rembg
-# onnxruntime
+# Car/background separation (ONNX U2-Net, no torch). Strongly recommended:
+# GrabCut fallback leaks background badly on on-track shots. ~180 MB model
+# auto-downloads to ~/.u2net on first run.
+rembg>=2.0
+onnxruntime>=1.17
