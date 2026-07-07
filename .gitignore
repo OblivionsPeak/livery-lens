@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.u2net/
+# raw downloaded photos are kept out of git unless licensing is confirmed;
+# see examples/SOURCES.md for attribution and re-download URLs
+examples/*/input.jpg

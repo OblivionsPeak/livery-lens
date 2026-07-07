@@ -1,0 +1,10 @@
+# Core pipeline — CPU-only, lightweight
+numpy>=1.26,<3
+opencv-python-headless>=4.9
+scikit-learn>=1.4
+Pillow>=10.0
+
+# Optional, better car/background separation (ONNX U2-Net, no torch).
+# Install with:  pip install rembg onnxruntime
+# rembg
+# onnxruntime
