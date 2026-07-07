@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Livery Lens — extract a livery palette from a race car photo</title>
+<meta name="description" content="Extract the livery palette and color zones from a photo of a real race car — entirely in your browser. Nothing is uploaded.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='7' fill='%23ff4d2e'/%3E%3Crect y='7' width='16' height='5' fill='%23e8eaef'/%3E%3Crect y='12' width='16' height='4' fill='%230d0f13'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Livery<span class="lens">&nbsp;Lens</span></h1>
+    <span class="tagline">race car photo &rarr; livery palette + color zones, for iRacing livery building</span>
+  </header>
+
+  <div class="privacy">
+    <b>100% local.</b> Your photos never leave the browser — there are no
+    uploads, no servers, no analytics. Segmentation and color analysis run
+    on your machine via WebAssembly.
+  </div>
+
+  <label class="drop" id="drop">
+    <div class="big">Drop a race car photo here, or click to choose</div>
+    <div class="hint">JPEG / PNG / WebP &middot; works best on side or three-quarter shots of a single car</div>
+    <input type="file" id="file" accept="image/*">
+  </label>
+
+  <div class="controls">
+    <label title="U2-Net (u2netp) salient-object segmentation via onnxruntime WASM">
+      <input type="checkbox" id="useAI" checked>
+      AI car/background separation (U2-Net)
+    </label>
+    <label>
+      Max colors
+      <input type="range" id="kColors" min="3" max="10" value="7">
+      <span class="kval" id="kVal">7</span>
+    </label>
+    <span class="note">First AI run downloads the model (~16&nbsp;MB, cached by the browser). Untick for a fast no-AI heuristic mask.</span>
+  </div>
+
+  <div id="status">
+    <div class="stage"><div class="spinner"></div><span id="stageText">Working&hellip;</span></div>
+    <div class="bar" id="bar"><div id="barFill"></div></div>
+    <div class="warn" id="warn"></div>
+  </div>
+
+  <div id="results">
+    <div class="grid">
+      <div class="card"><h2>Original</h2><canvas id="cvOriginal"></canvas></div>
+      <div class="card"><h2>Detected car mask</h2><canvas id="cvMask"></canvas></div>
+      <div class="card"><h2>Zone map (posterized)</h2><canvas id="cvZones"></canvas></div>
+      <div class="card">
+        <h2>Palette</h2>
+        <div id="swatches"></div>
+        <h2 style="margin-top:18px">Zone regions</h2>
+        <div id="zoneStats"></div>
+      </div>
+    </div>
+    <div class="downloads">
+      <button class="btn primary" id="dlClearcoat">Download clearcoat_starter.json</button>
+      <button class="btn" id="dlPalette">Download palette.json</button>
+      <button class="btn" id="dlZones">Download zones.png</button>
+    </div>
+    <div class="meta" id="meta"></div>
+  </div>
+
+  <footer>
+    Livery Lens is the web port of the <code>livery-lens</code> Python CLI —
+    a spike: expect a useful starting point, not a finished livery. Sponsor
+    logos and vectorization are out of scope. The in-browser model is the
+    small <code>u2netp</code>; masks are slightly rougher than the CLI's
+    full-size U2-Net. Everything runs locally in your browser.
+    <a href="https://github.com/OblivionsPeak/livery-lens">Source</a> &middot;
+    <a href="THIRD_PARTY.md">third-party licenses</a>
+  </footer>
+</div>
+
+<script src="vendor/ort.wasm.min.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
