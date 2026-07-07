@@ -1,0 +1,61 @@
+{
+  "source": "synthetic.png",
+  "segmenter": "none",
+  "colors": [
+    {
+      "hex": "#d02928",
+      "role": "base",
+      "coverage": 0.5,
+      "saturation": 0.808,
+      "lab": [
+        45.88,
+        63.0,
+        43.0
+      ]
+    },
+    {
+      "hex": "#f0f0f0",
+      "role": "accent",
+      "coverage": 0.2,
+      "saturation": 0.0,
+      "lab": [
+        94.9,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "hex": "#2143cb",
+      "role": "accent",
+      "coverage": 0.15,
+      "saturation": 0.839,
+      "lab": [
+        35.69,
+        39.0,
+        -73.0
+      ]
+    },
+    {
+      "hex": "#f1d021",
+      "role": "accent",
+      "coverage": 0.1,
+      "saturation": 0.863,
+      "lab": [
+        83.92,
+        -4.0,
+        80.0
+      ]
+    },
+    {
+      "hex": "#808080",
+      "role": "detail",
+      "coverage": 0.05,
+      "saturation": 0.0,
+      "lab": [
+        53.73,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

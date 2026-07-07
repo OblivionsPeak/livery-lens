@@ -3,14 +3,16 @@
 Everything the web app needs is committed to this repo — no CDN, no
 external requests at runtime. Photos never leave the browser.
 
-## ONNX Runtime Web 1.22.0 (`vendor/ort.min.js`, `vendor/ort-wasm-simd-threaded.{wasm,mjs}`)
+## ONNX Runtime Web 1.22.0 (`vendor/ort.wasm.min.js`, `vendor/ort-wasm-simd-threaded.{wasm,mjs}`)
 
 - Source: the official `onnxruntime-web@1.22.0` npm tarball
   (`npm pack onnxruntime-web@1.22.0`), files copied verbatim from
   `package/dist/`.
 - License: MIT — Copyright (c) Microsoft Corporation.
   <https://github.com/microsoft/onnxruntime/blob/main/LICENSE>
-- Only the single-threaded-capable SIMD WASM build is vendored; the app
+- `ort.wasm.min.js` is the WASM-only (CPU) bundle — the full `ort.min.js`
+  requires the larger WebGPU/JSEP binaries, which are not vendored.
+  Only the single-threaded-capable SIMD WASM build is vendored; the app
   runs it with `numThreads = 1` (GitHub Pages does not send the COOP/COEP
   headers required for threaded WASM).
 
