@@ -1,0 +1,82 @@
+{
+  "schema": "livery-lens/palette@1",
+  "source": {
+    "photo": "input.jpg",
+    "generator": "livery-lens extract.py",
+    "generated": "2026-07-07T02:50:18+00:00"
+  },
+  "baseColor": "#2b2b2e",
+  "colors": [
+    {
+      "hex": "#2b2b2e",
+      "role": "base",
+      "coverage": 0.2678,
+      "lab": [
+        17.76,
+        1.69,
+        -1.05
+      ]
+    },
+    {
+      "hex": "#e3e6ec",
+      "role": "accent",
+      "coverage": 0.232,
+      "lab": [
+        91.65,
+        0.12,
+        -2.24
+      ]
+    },
+    {
+      "hex": "#796c6a",
+      "role": "accent",
+      "coverage": 0.196,
+      "lab": [
+        46.86,
+        5.13,
+        3.29
+      ]
+    },
+    {
+      "hex": "#b9abaa",
+      "role": "accent",
+      "coverage": 0.177,
+      "lab": [
+        71.25,
+        5.28,
+        2.29
+      ]
+    },
+    {
+      "hex": "#dc0a04",
+      "role": "accent",
+      "coverage": 0.061,
+      "lab": [
+        46.53,
+        71.85,
+        59.57
+      ]
+    },
+    {
+      "hex": "#7b0f0f",
+      "role": "accent",
+      "coverage": 0.0387,
+      "lab": [
+        25.5,
+        44.57,
+        31.24
+      ]
+    },
+    {
+      "hex": "#238dc0",
+      "role": "accent",
+      "coverage": 0.0276,
+      "lab": [
+        55.52,
+        -10.64,
+        -34.97
+      ]
+    }
+  ],
+  "notes": "Coverage is the fraction of detected car-body pixels. Roles are heuristic guesses (base/accent/detail)."
+}

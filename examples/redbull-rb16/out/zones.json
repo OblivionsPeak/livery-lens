@@ -1,0 +1,382 @@
+{
+  "image_size": [
+    1200,
+    800
+  ],
+  "zones": [
+    {
+      "hex": "#7d645e",
+      "role": "base",
+      "coverage": 0.3484,
+      "regions": [
+        {
+          "bbox": [
+            388,
+            341,
+            293,
+            169
+          ],
+          "centroid": [
+            500.0,
+            420.9
+          ],
+          "area_frac_of_car": 0.0612
+        },
+        {
+          "bbox": [
+            797,
+            524,
+            309,
+            245
+          ],
+          "centroid": [
+            969.1,
+            663.5
+          ],
+          "area_frac_of_car": 0.0533
+        },
+        {
+          "bbox": [
+            492,
+            190,
+            359,
+            270
+          ],
+          "centroid": [
+            703.3,
+            347.1
+          ],
+          "area_frac_of_car": 0.0515
+        },
+        {
+          "bbox": [
+            489,
+            615,
+            303,
+            147
+          ],
+          "centroid": [
+            636.1,
+            664.9
+          ],
+          "area_frac_of_car": 0.0465
+        },
+        {
+          "bbox": [
+            839,
+            270,
+            155,
+            107
+          ],
+          "centroid": [
+            929.2,
+            318.1
+          ],
+          "area_frac_of_car": 0.0243
+        },
+        {
+          "bbox": [
+            256,
+            263,
+            122,
+            147
+          ],
+          "centroid": [
+            319.6,
+            327.2
+          ],
+          "area_frac_of_car": 0.0176
+        },
+        {
+          "bbox": [
+            345,
+            181,
+            148,
+            112
+          ],
+          "centroid": [
+            408.1,
+            244.7
+          ],
+          "area_frac_of_car": 0.0165
+        },
+        {
+          "bbox": [
+            1026,
+            500,
+            106,
+            88
+          ],
+          "centroid": [
+            1069.8,
+            548.8
+          ],
+          "area_frac_of_car": 0.0081
+        }
+      ]
+    },
+    {
+      "hex": "#352731",
+      "role": "accent",
+      "coverage": 0.2762,
+      "regions": [
+        {
+          "bbox": [
+            366,
+            267,
+            352,
+            533
+          ],
+          "centroid": [
+            529.7,
+            479.2
+          ],
+          "area_frac_of_car": 0.1094
+        },
+        {
+          "bbox": [
+            892,
+            325,
+            109,
+            169
+          ],
+          "centroid": [
+            961.0,
+            407.0
+          ],
+          "area_frac_of_car": 0.0172
+        },
+        {
+          "bbox": [
+            793,
+            620,
+            210,
+            93
+          ],
+          "centroid": [
+            912.8,
+            683.8
+          ],
+          "area_frac_of_car": 0.0139
+        },
+        {
+          "bbox": [
+            343,
+            282,
+            132,
+            82
+          ],
+          "centroid": [
+            394.5,
+            324.7
+          ],
+          "area_frac_of_car": 0.011
+        },
+        {
+          "bbox": [
+            564,
+            714,
+            226,
+            71
+          ],
+          "centroid": [
+            668.6,
+            735.2
+          ],
+          "area_frac_of_car": 0.0104
+        },
+        {
+          "bbox": [
+            1025,
+            446,
+            154,
+            102
+          ],
+          "centroid": [
+            1096.7,
+            508.5
+          ],
+          "area_frac_of_car": 0.0088
+        },
+        {
+          "bbox": [
+            530,
+            717,
+            68,
+            83
+          ],
+          "centroid": [
+            566.7,
+            761.8
+          ],
+          "area_frac_of_car": 0.0083
+        }
+      ]
+    },
+    {
+      "hex": "#413c8e",
+      "role": "accent",
+      "coverage": 0.1391,
+      "regions": [
+        {
+          "bbox": [
+            523,
+            458,
+            356,
+            237
+          ],
+          "centroid": [
+            697.9,
+            565.6
+          ],
+          "area_frac_of_car": 0.1129
+        }
+      ]
+    },
+    {
+      "hex": "#ef6544",
+      "role": "accent",
+      "coverage": 0.0937,
+      "regions": [
+        {
+          "bbox": [
+            578,
+            725,
+            265,
+            75
+          ],
+          "centroid": [
+            706.1,
+            764.0
+          ],
+          "area_frac_of_car": 0.0299
+        },
+        {
+          "bbox": [
+            1024,
+            522,
+            148,
+            108
+          ],
+          "centroid": [
+            1101.6,
+            573.5
+          ],
+          "area_frac_of_car": 0.0184
+        },
+        {
+          "bbox": [
+            702,
+            450,
+            116,
+            100
+          ],
+          "centroid": [
+            774.7,
+            488.7
+          ],
+          "area_frac_of_car": 0.0138
+        },
+        {
+          "bbox": [
+            377,
+            119,
+            75,
+            79
+          ],
+          "centroid": [
+            418.5,
+            160.0
+          ],
+          "area_frac_of_car": 0.0087
+        },
+        {
+          "bbox": [
+            405,
+            315,
+            79,
+            46
+          ],
+          "centroid": [
+            446.4,
+            343.4
+          ],
+          "area_frac_of_car": 0.006
+        }
+      ]
+    },
+    {
+      "hex": "#fce645",
+      "role": "accent",
+      "coverage": 0.0556,
+      "regions": [
+        {
+          "bbox": [
+            738,
+            432,
+            237,
+            191
+          ],
+          "centroid": [
+            879.9,
+            538.5
+          ],
+          "area_frac_of_car": 0.0417
+        }
+      ]
+    },
+    {
+      "hex": "#e5d1c0",
+      "role": "detail",
+      "coverage": 0.0535,
+      "regions": [
+        {
+          "bbox": [
+            1057,
+            463,
+            99,
+            54
+          ],
+          "centroid": [
+            1104.8,
+            492.1
+          ],
+          "area_frac_of_car": 0.0052
+        }
+      ]
+    },
+    {
+      "hex": "#e3aa27",
+      "role": "accent",
+      "coverage": 0.0336,
+      "regions": [
+        {
+          "bbox": [
+            811,
+            529,
+            89,
+            137
+          ],
+          "centroid": [
+            856.8,
+            604.0
+          ],
+          "area_frac_of_car": 0.0108
+        },
+        {
+          "bbox": [
+            438,
+            122,
+            63,
+            75
+          ],
+          "centroid": [
+            464.3,
+            162.7
+          ],
+          "area_frac_of_car": 0.0058
+        }
+      ]
+    }
+  ]
+}

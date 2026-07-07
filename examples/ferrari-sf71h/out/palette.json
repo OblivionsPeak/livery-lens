@@ -1,0 +1,83 @@
+{
+  "source": "input.jpg",
+  "segmenter": "rembg",
+  "colors": [
+    {
+      "hex": "#2a292f",
+      "role": "base",
+      "coverage": 0.22850953490662027,
+      "saturation": 0.129,
+      "lab": [
+        17.22,
+        2.67,
+        -3.75
+      ]
+    },
+    {
+      "hex": "#5b191a",
+      "role": "accent",
+      "coverage": 0.1988791151081498,
+      "saturation": 0.725,
+      "lab": [
+        20.2,
+        30.82,
+        16.41
+      ]
+    },
+    {
+      "hex": "#646374",
+      "role": "accent",
+      "coverage": 0.1879164341746808,
+      "saturation": 0.145,
+      "lab": [
+        42.92,
+        4.25,
+        -8.57
+      ]
+    },
+    {
+      "hex": "#d73c28",
+      "role": "accent",
+      "coverage": 0.14871007975842715,
+      "saturation": 0.816,
+      "lab": [
+        49.46,
+        59.23,
+        47.51
+      ]
+    },
+    {
+      "hex": "#abaeb3",
+      "role": "detail",
+      "coverage": 0.11775035284077855,
+      "saturation": 0.043,
+      "lab": [
+        71.21,
+        0.46,
+        -2.85
+      ]
+    },
+    {
+      "hex": "#cf6f69",
+      "role": "accent",
+      "coverage": 0.06109068828568615,
+      "saturation": 0.494,
+      "lab": [
+        57.78,
+        37.48,
+        20.91
+      ]
+    },
+    {
+      "hex": "#889340",
+      "role": "accent",
+      "coverage": 0.05714379492565727,
+      "saturation": 0.565,
+      "lab": [
+        58.67,
+        -15.41,
+        42.81
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "livery-lens/palette@1",
+  "source": {
+    "photo": "input.jpg",
+    "generator": "livery-lens extract.py",
+    "generated": "2026-07-07T02:50:28+00:00"
+  },
+  "baseColor": "#2a292f",
+  "colors": [
+    {
+      "hex": "#2a292f",
+      "role": "base",
+      "coverage": 0.2285,
+      "lab": [
+        17.22,
+        2.67,
+        -3.75
+      ]
+    },
+    {
+      "hex": "#5b191a",
+      "role": "accent",
+      "coverage": 0.1989,
+      "lab": [
+        20.2,
+        30.82,
+        16.41
+      ]
+    },
+    {
+      "hex": "#646374",
+      "role": "accent",
+      "coverage": 0.1879,
+      "lab": [
+        42.92,
+        4.25,
+        -8.57
+      ]
+    },
+    {
+      "hex": "#d73c28",
+      "role": "accent",
+      "coverage": 0.1487,
+      "lab": [
+        49.46,
+        59.23,
+        47.51
+      ]
+    },
+    {
+      "hex": "#abaeb3",
+      "role": "detail",
+      "coverage": 0.1178,
+      "lab": [
+        71.21,
+        0.46,
+        -2.85
+      ]
+    },
+    {
+      "hex": "#cf6f69",
+      "role": "accent",
+      "coverage": 0.0611,
+      "lab": [
+        57.78,
+        37.48,
+        20.91
+      ]
+    },
+    {
+      "hex": "#889340",
+      "role": "accent",
+      "coverage": 0.0571,
+      "lab": [
+        58.67,
+        -15.41,
+        42.81
+      ]
+    }
+  ],
+  "notes": "Coverage is the fraction of detected car-body pixels. Roles are heuristic guesses (base/accent/detail)."
+}

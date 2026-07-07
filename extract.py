@@ -248,7 +248,7 @@ def assign_roles(clusters):
         if i == 0:
             c["role"] = "base"
         elif c["coverage"] >= 0.15 or (c["saturation"] > 0.45
-                                       and c["coverage"] >= 0.04):
+                                       and c["coverage"] >= 0.025):
             c["role"] = "accent"
         else:
             c["role"] = "detail"
